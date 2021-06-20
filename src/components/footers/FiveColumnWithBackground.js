@@ -19,7 +19,7 @@ const ColumnHeading = tw.h5`uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:border-gray-100 pb-1 transition duration-300`;
+const Link = tw.a`hocus:border-b-2 hocus:border-gray-100 pb-1 transition duration-300`;
 
 const Divider = tw.div`my-16 border-b-2 border-primary-400 w-full`;
 
