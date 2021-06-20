@@ -1,0 +1,70 @@
+/* Below animations are fore modal created using React-Modal */
+.ReactModal__Overlay {
+    transition: transform 300ms ease-in-out;
+    transition-delay: 100ms;
+    transform: scale(0);
+    /* transform: translateY(-150%); */
+}
+
+.ReactModal__Overlay--after-open{
+    transform: scale(1);
+    /* transform: translateY(0%); */
+}
+
+.ReactModal__Overlay--before-close{
+    transform: scale(0);
+    /* transform: translateY(-150%); */
+}
+/*.YMeyU{
+   
+    background-color:#056bd3 !important;
+}
+.kcXBVr {
+    color:#056bd3 !important;
+}
+.eYMTpg{
+    color:#056bd3 !important;
+}
+.daMDiO{
+    color:#056bd3 !important;
+}
+.eWMmLx{
+    background-color:#056bd3 !important;
+}
+.jyBlFh{
+    color:#056bd3 !important;
+}
+.jdbbvn{
+    color:#056bd3 !important;
+}
+.bDQJvG{
+    background-color:#056bd3 !important ;
+}
+.dphovI img{
+    width: 200px !important;
+}
+.kVvsvd{
+    width: 200px !important;
+}  
+.eDDaab img{
+    width: 144px !important;
+}
+.iaviJY{
+    color:#056bd3 !important;  
+}*/
+
+a:hover {
+    color: #056bd3 !important; 
+    border-bottom: #056bd3 !important;
+  }
+
+  a.kiLlmS,.XmWfo:hover{
+    color: white !important; 
+  }
+  
+ a.iSdnCD:hover{
+     color: white !important;
+ }
+ a.dkcApw:hover{
+     color: white !important;
+ }
