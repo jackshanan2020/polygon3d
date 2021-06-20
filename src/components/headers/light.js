@@ -23,18 +23,21 @@ export const NavLinks = tw.div`inline-block`;
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 hocus:border-b-2 hover:border-primary-500 hocus:text-primary-500
+  pb-1 
+`;
+
+export const RawTextLink = tw(NavLink)`
+  hocus:border-b-2 hover:border-primary-500 hocus:text-primary-500
 `;
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
   px-8 py-3 rounded bg-primary-500 text-gray-100
   hocus:bg-primary-800 hocus:text-gray-200 focus:shadow-outline
-  border-b-0
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center font-black text-2xl! ml-0!`};
 
   img {
     ${tw`mr-3`}
@@ -73,11 +76,11 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#home">Home</NavLink>
+      <RawTextLink href="/#home">Home</RawTextLink>
 
-      <NavLink href="/#our-services">Our Services</NavLink>
+      <RawTextLink href="/#our-services">Our Services</RawTextLink>
 
-      <NavLink href="/#">About Us</NavLink>
+      <RawTextLink href="/#">About Us</RawTextLink>
 
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#contact-us">Contact Us</PrimaryLink>
     </NavLinks>
