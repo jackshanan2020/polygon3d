@@ -9,6 +9,7 @@ import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/Polygon-3D-White.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+import { PrimaryButton } from "components/misc/Buttons.js";
 
 const Header = tw.header`
   flex justify-between items-center
@@ -30,10 +31,8 @@ export const RawTextLink = tw(NavLink)`
   hocus:border-b-2 hover:border-primary-500 hocus:text-primary-500
 `;
 
-export const PrimaryLink = tw(NavLink)`
-  lg:mx-0
-  px-8 py-3 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-800 hocus:text-gray-200 focus:shadow-outline
+export const PrimaryLink = styled(PrimaryButton)`
+  ${tw`lg:mx-0`}
 `;
 
 export const LogoLink = styled(NavLink)`
@@ -43,8 +42,8 @@ export const LogoLink = styled(NavLink)`
     ${tw`mr-3`}
     max-width: 200px;
   }
-`;
-
+  
+  `;
 export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-between`;
 export const NavToggle = tw.button`
   lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
@@ -82,7 +81,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
       <RawTextLink href="/#">About Us</RawTextLink>
 
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#contact-us">Contact Us</PrimaryLink>
+      <PrimaryLink as="a" buttonRounded={roundedHeaderButton} href="/#contact-us">Contact Us</PrimaryLink>
     </NavLinks>
   ];
 
