@@ -41,7 +41,7 @@ export const LogoLink = styled(NavLink)`
 
   img {
     ${tw`mr-3`}
-    max-width: 100px;
+    max-width: 200px;
   }
 `;
 
